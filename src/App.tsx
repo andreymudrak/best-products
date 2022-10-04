@@ -15,7 +15,6 @@ const App: React.FC = () => {
         <Pages />
       </ThemeProvider>
     </Provider>
-
   );
 }
 

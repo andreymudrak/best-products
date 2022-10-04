@@ -1,7 +1,14 @@
-import { takeLatest, all, put } from 'redux-saga/effects';
+import { takeLatest, all, put, call } from 'redux-saga/effects';
+
+import { OrderService } from '../../services/OrderService';
+import { Response } from '../../services/dto/orders-response.dto';
+
+
 import { orderDashboardsActions } from './actions';
 
-function* ordersReload() {
+function* ordersReload(): Generator {
+
+  const result = yield call(OrderService.getOrders);
   yield put(orderDashboardsActions.ordersRefresh([]));
 }
 
