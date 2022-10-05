@@ -9,7 +9,7 @@ import { Wrapper } from './Header.style';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const [seconds, setSeconds] = useState(11);
+  const [seconds, setSeconds] = useState(60);
 
   useInterval(() => {
     if (seconds === 0) {
