@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { orderDashboardsActions } from '../../redux/orderDashboard/actions';
+import { Header } from '../../containers/Header';
 import { DatePicker } from '../../containers/DatePicker';
 import { Wrapper } from './OrderDashboard.style';
 
@@ -15,6 +16,7 @@ const OrderDashboard: React.FC = () => {
   return (
     <Wrapper>
       <div className="main-content">
+        <Header />
         <DatePicker />
       </div>
       <div className="table-content"></div>

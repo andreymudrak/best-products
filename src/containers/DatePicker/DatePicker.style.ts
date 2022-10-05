@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   .date {
     font-weight: 700;
     font-size: 30px;
-    line-height: 37px;
+    letter-spacing: 1.5px;
   }
 
   .buttons {

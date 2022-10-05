@@ -9,7 +9,7 @@ export const Wrapper = styled.button`
   width: 53px;
   height: 53px;
 
-  background-color: ${({ theme }) => theme.colors.darkGrey};;
+  background-color: ${({ theme }) => theme.colors.darkGrey};
   border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 5px;
 
