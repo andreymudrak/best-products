@@ -1,7 +1,14 @@
 import styled from 'styled-components';
+import { publicImagesURL } from '../../config';
+
+const Circle = `${publicImagesURL}/images/circles.png`;
 
 export const Wrapper = styled.div`
   width: 100%;
+  background-image: url(${Circle});
+  background-size: 42.1%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
 
   .main-content {
     padding: 40px 36px;

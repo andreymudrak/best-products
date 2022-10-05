@@ -10,7 +10,5 @@ export const THEME = {
   fonts: {
     sourceSerifPro: 'Source Serif Pro',
     roboto: 'Roboto',
-  },
-  gradients: {
-  },
+  }
 };
