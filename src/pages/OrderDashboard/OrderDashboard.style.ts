@@ -23,4 +23,19 @@ export const Wrapper = styled.div`
       font-family: ${({ theme }) => theme.fonts.roboto};
     }
   }
+
+  .table-content {
+    display: flex;
+    gap: 17px;
+    width: 100%;
+    padding-bottom: 35px;
+
+    & :first-child {
+      flex-shrink: 38.5;
+    }
+
+    & :last-child {
+      flex-shrink: 30;
+    }
+  }
 `;

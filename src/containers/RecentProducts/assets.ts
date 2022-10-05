@@ -1,0 +1,1 @@
+export const columns = ['NR', 'DATE', 'PRODUCT NAME', 'ORDER VOLUME'];

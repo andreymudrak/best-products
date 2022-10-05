@@ -9,6 +9,8 @@ import { OrdersUtils } from '../../utils/OrderUtils';
 import { Header } from '../../containers/Header';
 import { DatePicker } from '../../containers/DatePicker';
 import { ProgressBar } from '../../components/ProgressBar';
+import { RecentProducts } from '../../containers/RecentProducts';
+import { BestProducts } from '../../containers/BestProducts';
 import { Wrapper } from './OrderDashboard.style';
 
 const OrderDashboard: React.FC = () => {
@@ -30,7 +32,10 @@ const OrderDashboard: React.FC = () => {
         </div>
         <ProgressBar currentValue={sumOfMonth} amount={TOTAL_AMOUNT} showAmount/>
       </div>
-      <div className="table-content"></div>
+      <div className="table-content">
+        <RecentProducts />
+        <BestProducts />
+      </div>
     </Wrapper>
   );
 };

@@ -19,6 +19,7 @@ export const Wrapper = styled.div<WrapperProps>`
   height: ${({ showAmount }) => showAmount ? '162px' : '18px'};
   position: relative;
   margin-top: ${({ showAmount }) => showAmount ? '100px' : '0'};
+  width: 100%;
 
   .progress-bar-container {
     width: 100%;
@@ -30,6 +31,7 @@ export const Wrapper = styled.div<WrapperProps>`
       height: ${({ showAmount }) => showAmount ? '47px' : '18px'};
       background-color: ${({ theme }) => theme.colors.blue};
       width: ${({ currentValue, amount, showAmount }) => getWidth(currentValue, amount, showAmount)};
+      transition: all 0.4s ease-out;
     }
   }
 
@@ -47,7 +49,7 @@ export const Wrapper = styled.div<WrapperProps>`
     .delimiter {
       width: 6px;
       height: 79px;
-      margin-top: 16px;
+      margin-top: 15px;
       background-color: ${({ theme }) => theme.colors.lightGrey};
     }
   }
