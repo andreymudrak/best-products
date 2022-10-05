@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className='refresh'>
         Refresh in&nbsp;
-        <span>{seconds}</span>
+        <span>{seconds.toLocaleString('en-US')}</span>
       </div>
     </Wrapper>
   );

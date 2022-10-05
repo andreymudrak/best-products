@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   
-  width: 432px;
+  max-width: 432px;
 
   .date {
     font-weight: 700;
     font-size: 30px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.8px;
   }
 
   .buttons {

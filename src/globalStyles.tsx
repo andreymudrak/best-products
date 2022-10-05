@@ -2,10 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css?family=Montserrat');
-  }
 
   html {
     overflow: scroll;

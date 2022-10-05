@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  padding: 38px 0 2px 0;
+  padding-top: 36px;
   font-size: 20px;
   letter-spacing: 1px;
 
@@ -14,9 +14,10 @@ export const Wrapper = styled.div`
   }
 
   .refresh {
-    letter-spacing: 1.1px;
+    letter-spacing: 0.1px;
     padding-top: 1px;
-    width: 132px;
+    width: 134px;
+
     span {
       height: 24px;
       font-weight: 700;
