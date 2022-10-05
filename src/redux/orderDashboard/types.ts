@@ -14,5 +14,6 @@ export interface ISelectedDate {
 
 export interface IState {
   orders: IOrder[];
-  selectedDate: ISelectedDate
+  target: number,
+  date: ISelectedDate
 }
