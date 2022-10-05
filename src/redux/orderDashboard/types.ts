@@ -1,10 +1,10 @@
-export type DateFormat = string | number | Date;
+export type ValueFormat = string | number | Date;
 
 export interface IOrder {
-  orderNumber: number;
-  orderDate: DateFormat;
-  product: string;
-  orderVolume: string;
+  orderNumber: ValueFormat;
+  orderDate: ValueFormat;
+  product: ValueFormat;
+  orderVolume: ValueFormat;
 }
 
 export interface ISelectedDate {

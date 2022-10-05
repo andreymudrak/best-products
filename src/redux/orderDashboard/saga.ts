@@ -1,15 +1,20 @@
 import { takeLatest, all, put, call } from 'redux-saga/effects';
 
 import { OrderService } from '../../services/OrderService';
-import { Response } from '../../services/dto/orders-response.dto';
+import { OrdersUtils } from '../../utils/OrderUtils';
 
 
 import { orderDashboardsActions } from './actions';
 
 function* ordersReload(): Generator {
 
-  const result = yield call(OrderService.getOrders);
-  yield put(orderDashboardsActions.ordersRefresh([]));
+  const result: any = yield call(OrderService.getOrders);
+  if (typeof result === null) {
+    return;
+  }
+
+  const parsedResult = OrdersUtils.perseOrders(result);
+  yield put(orderDashboardsActions.ordersRefresh(parsedResult));
 }
 
 export default function* orderDashBoardSaga() {

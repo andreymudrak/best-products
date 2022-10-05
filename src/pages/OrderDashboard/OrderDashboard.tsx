@@ -9,7 +9,7 @@ const OrderDashboard: React.FC = () => {
 
   useEffect(() => {
     dispatch(orderDashboardsActions.ordersReload());
-  }, [])
+  }, []);
 
   return (
     <Wrapper>

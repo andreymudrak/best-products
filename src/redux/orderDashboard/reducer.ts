@@ -13,11 +13,12 @@ const initState: IState = {
 
 
 export default function appReducer(state = initState, action: AnyAction) {
-  switch (action.type) {
-    case orderDashboardsActions.ORDERS_RELOAD: {
+  const { type, payload } = action;
+  switch (type) {
+    case orderDashboardsActions.ORDERS_REFRESH: {
       return {
         ...state,
-        orders: state.orders,
+        orders: payload.orders,
       };
     }
     default: {
