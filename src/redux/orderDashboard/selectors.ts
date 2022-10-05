@@ -17,5 +17,5 @@ export const selectSumOfMonth = ({ orderDashboard }: RootState) => {
     return acc;
   } , []);
 
-  return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(sum(volumeArr));
+  return sum(volumeArr);
 };

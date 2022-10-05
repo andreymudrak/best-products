@@ -19,6 +19,9 @@ class OrdersUtils {
     });
   }
 
+  static convertToEuroCurrency(value: number): string {
+    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
+  }
 }
 
 export default OrdersUtils;
